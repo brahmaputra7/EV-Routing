@@ -2,8 +2,10 @@
   <div class="pa-5">
     <div class="carContainer pa-5" data-aos="zoom-in" style="text-align: center;">
       <img src="/img/ioniq5.png" /> 
+      <div>
       <b>IONIQ 5</b><br/>
       Standard Range (2022)
+      </div>
     </div>
     <div class="d-flex justify-center pt-4">
       <div style="font-size:0.7em" class="mr-5">
@@ -101,6 +103,7 @@
           </div>
 
     </div>
+    <v-btn color="cyan" block @click="$router.push('/route')">NEXT</v-btn>
   </div>
 </template>
 

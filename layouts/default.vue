@@ -24,7 +24,6 @@
   background-color:#101010;
   width:350px;
   height:700px;
-  border-radius:20px;
   overflow-y:auto;
 }
 
