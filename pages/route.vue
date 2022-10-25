@@ -27,7 +27,7 @@
 export default {
     data(){
         return{
-            accessToken: 'pk.eyJ1Ijoic3BhdGlhIiwiYSI6ImNreGZzODVjaTA0c2Eyb29hcnphMWk1cjcifQ.MLFsmOmwkn2UG2Lr_N_bZg',
+            accessToken: '',
             map:{}
         }
     },
@@ -37,7 +37,9 @@ export default {
     methods:{
         createMap(){
             const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
-            mapboxgl.accessToken = this.accessToken
+
+            console.log(process.env.VUE_APP_MAPBOX)
+            mapboxgl.accessToken = process.env.VUE_APP_MAPBOX
 
             this.map = new mapboxgl.Map({
                 container: 'map',
