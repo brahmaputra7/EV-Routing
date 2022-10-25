@@ -2,7 +2,7 @@
   <v-app dark>
     
   <div class="d-flex align-center justify-center pageContainer">
-    <div class="evContainer">
+    <div class="evContainer elevation-10">
     <nuxt/>
     </div>
     </div>
@@ -17,26 +17,29 @@
 
 
 .pageContainer {
-  background-color:#000000; 
+  background: linear-gradient(179.2deg, #000000 0.65%, #009AAF 339.59%);
   min-height:100vh;
 }
 .evContainer {
   background-color:#101010;
   width:350px;
   height:700px;
+  position:relative;
   overflow-y:auto;
+  border-radius:20px;
 }
 
 @media only screen and (max-width: 600px) {
   .evContainer {
     width:100%;
     min-height:100vh;
+    border-radius:0px !important;
   }
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
 }
 
 /* Track */

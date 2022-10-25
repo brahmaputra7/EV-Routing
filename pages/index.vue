@@ -7,7 +7,7 @@
       <div>
         <div v-for="item,index in CarsData" :key="index">
           <div class="px-5 py-2"><b>{{item.brand}}</b></div>
-          <div v-for="item2,index2 in item.items" :key="index2" class="px-5 py-5" style="border-bottom:1px solid #262626;cursor:pointer" @click="$router.push('/current-profile')">
+          <div v-for="item2,index2 in item.items" :key="index2" class="px-5 py-5" style="border-bottom:1px solid #262626;cursor:pointer" v-ripple @click="$router.push('/current-profile')">
             {{item2.name}}
           </div>
         </div>
