@@ -38,8 +38,7 @@ export default {
         createMap(){
             const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
 
-            console.log(process.env.VUE_APP_MAPBOX)
-            mapboxgl.accessToken = process.env.VUE_APP_MAPBOX
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic3BhdGlhIiwiYSI6ImNreGZzODVjaTA0c2Eyb29hcnphMWk1cjcifQ.MLFsmOmwkn2UG2Lr_N_bZg'
 
             this.map = new mapboxgl.Map({
                 container: 'map',
