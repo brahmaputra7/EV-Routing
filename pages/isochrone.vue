@@ -131,7 +131,7 @@ export default {
                 '?contours_minutes=' +
                 time +
                 '&polygons=true&access_token=' +
-                process.env.VUE_APP_MAPBOX_TOKEN
+                'pk.eyJ1Ijoic3BhdGlhIiwiYSI6ImNreGZzODVjaTA0c2Eyb29hcnphMWk1cjcifQ.MLFsmOmwkn2UG2Lr_N_bZg'
 
                 axios({
                     url: query
