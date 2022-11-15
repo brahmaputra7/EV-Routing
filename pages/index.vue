@@ -1,21 +1,18 @@
 <template>
-  <div>
-      <div class="pa-5" >
-        Find your vehicle
-        <v-text-field hide-details class="mt-2" solo-inverted dense prepend-inner-icon="mdi-magnify"></v-text-field>
-      </div>
-      <div>
-        <div v-for="item,index in CarsData" :key="index">
-          <div class="px-5 py-2"><b>{{item.brand}}</b></div>
-          <div v-for="item2,index2 in item.items" :key="index2" class="px-5 py-5" style="border-bottom:1px solid #262626;cursor:pointer" v-ripple @click="$router.push('/current-profile')">
-            {{item2.name}}
-          </div>
-        </div>
-      </div>
+  <div class="pt-10 pa-5 landingPage" style="text-align:center">
+    <img src="logo.png" width="200px"/>
+    <div class="cyan--text"><b>ELECTRIC VEHICLE</b></div>
+    <div style="font-size:0.8em">Solution Module</div>
+    <v-btn class="mt-3 cyan"  @click="$router.push('/find-vehicle')"  block>EV Route Plan</v-btn>
+    <v-btn class="mt-3 cyan" @click="$router.push('/isochrone')"  block>Isochrone Nearest SPKLU</v-btn>
   </div>
 </template>
 
 <style>
+.landingPage {
+  background:url('/ev/bg.jpg');background-size: cover;
+  height:100vh;
+}
 </style>
 
 <script>
