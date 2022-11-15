@@ -113,7 +113,7 @@ export default {
         createMap(){
 
             const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
-            mapboxgl.accessToken = process.env.VUE_APP_MAPBOX_TOKEN
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic3BhdGlhIiwiYSI6ImNreGZzODVjaTA0c2Eyb29hcnphMWk1cjcifQ.MLFsmOmwkn2UG2Lr_N_bZg'
 
             this.map = new mapboxgl.Map({
                 container: 'map',
@@ -247,7 +247,7 @@ export default {
                 }
             })
 
-            url = url + '?geometries=geojson&access_token=' + process.env.VUE_APP_MAPBOX_TOKEN
+            url = url + '?geometries=geojson&access_token=' + 'pk.eyJ1Ijoic3BhdGlhIiwiYSI6ImNreGZzODVjaTA0c2Eyb29hcnphMWk1cjcifQ.MLFsmOmwkn2UG2Lr_N_bZg'
             axios
             .get(url)
             .then((res) => {
