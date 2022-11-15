@@ -88,7 +88,7 @@ export default {
             this.map.on('load',()=>{
                 
              //adding image
-            this.map.loadImage('/ev/img/marker2.png ', (
+            this.map.loadImage('/img/marker2.png ', (
                     error,
                     image
                 ) => {

@@ -1,7 +1,7 @@
 <template>
   <div class="pa-5">
     <div class="carContainer pa-5" style="text-align: center;">
-      <img src="img/ioniq5.png"/> 
+      <img src="/img/ioniq5.png"/> 
       <div>
       <b>IONIQ 5</b><br/>
       Standard Range (2022)

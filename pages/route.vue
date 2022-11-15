@@ -5,7 +5,7 @@
                 <div class="d-flex justify-space-between pa-2 px-3" style="font-size:0.8em;background: rgba(0, 0, 0, 0.6);border-radius:5px;">
                     <div>Ioniq 5 - Standard</div>
                     <div>
-                        <v-btn x-small outlined @click="$router.push('/')">CHANGE</v-btn>
+                        <v-btn x-small outlined @click="$router.push('/current-profile')">CHANGE</v-btn>
                         <v-btn x-small outlined @click="$router.push('/current-profile')"><v-icon x-small>mdi-cog</v-icon></v-btn>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ export default {
             })
 
              //adding image
-             this.map.loadImage('/ev/img/startpoint.png ', (
+             this.map.loadImage('/img/startpoint.png ', (
                     error,
                     image
                 ) => {
@@ -134,7 +134,7 @@ export default {
                 })
 
              //adding image
-             this.map.loadImage('/ev/img/startpoint-2.png ', (
+             this.map.loadImage('/img/startpoint-2.png ', (
                     error,
                     image
                 ) => {
@@ -142,7 +142,7 @@ export default {
                     this.map.addImage('startpoint2', image)
                 })
              //adding image
-            this.map.loadImage('/ev/img/warehouse.png ', (
+            this.map.loadImage('/img/warehouse.png ', (
                     error,
                     image
                 ) => {
@@ -151,7 +151,7 @@ export default {
                 })
 
              //adding image
-            this.map.loadImage('/ev/img/marker2.png ', (
+            this.map.loadImage('/img/marker2.png ', (
                     error,
                     image
                 ) => {
